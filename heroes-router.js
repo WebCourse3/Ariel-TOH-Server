@@ -14,7 +14,7 @@ router.route('/')
         res.send(heroes);
     })
     .delete((req, res) => {
-        heroes = heroes.filter(hero => hero.name != req.query.term);
+        heroes = heroes.filter(hero => hero.name != req.query.name);
         res.send(heroes);
     });
 
